@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style2.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="container-fluid">
+        <!-- Toggle button using Bootstrap -->
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkModeToggle">
+            <label class="custom-control-label" for="darkModeToggle">Enable Dark Mode</label>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-10">
+                <div id="clock" class="text-center">
+                    <div>
+                        <span id="hours">00</span>
+                        <span class="time">Hour</span>
+                    </div>
+                    
+                    <div>
+                        <span id="minutes">00</span>
+                        <span class="time">Minute</span>
+                    </div>
+        
+                    <div>
+                        <span id="seconds">00</span>
+                        <span class="time">Second</span>
+                    </div>
+                    
+                    <div>
+                        <span id="period">AM</span> <!-- AM/PM indicator -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

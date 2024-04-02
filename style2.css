@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: color 0.3s, background-color 0.3s; 
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#clock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 230px;
+    width: 650px;
+    background: transparent;
+    border-radius: 3px;
+}
+
+#clock div {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(25, 29, 255, 0.404);
+    box-shadow: 5px 4px 15px rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    letter-spacing: 3px;
+    animation: anim1 3s alternate infinite;
+    margin: 10px;
+}
+
+@keyframes anim1 {
+    25% {background-color: rgba(0, 88, 251, 0.598);}
+    50% {background-color: rgba(243, 109, 255, 0.605);}
+    75% {background-color: rgba(117, 4, 183, 0.808);}
+    100% {background-color: rgba(18, 22, 250, 0.55);}
+}
+
+#clock span {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+#clock span.time {
+    font-size: 15px;
+}
+
+.custom-switch {
+    position: relative;
+    top: -120px;
+    left: 850px;
+}
+
+.custom-switch .custom-control-label::before {
+    background-color: #fff; /* Default color of the toggle switch */
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #000; /* Color of the toggle switch when checked (dark mode enabled) */
+}
+
+/* Styles for dark mode */
+.dark-mode {
+    background-color: rgba(16, 14, 14, 0.84);
+    color: white;
+}
